@@ -1,0 +1,21 @@
+homepage: "https://github.com/OpenPrinting/cups-browsed"
+main_repo: "https://github.com/OpenPrinting/cups-browsed.git"
+# help_url:
+language: c++
+
+primary_contact: "jiongchiyu@gmail.com"
+auto_ccs:
+  - "till.kamppeter@gmail.com"
+  - "ossfuzz@iosifache.me"
+  - "msweet@msweet.org"
+  
+architectures:
+  - x86_64
+
+sanitizers:
+  - address
+  - memory
+
+fuzzing_engines:
+  - libfuzzer
+ 
